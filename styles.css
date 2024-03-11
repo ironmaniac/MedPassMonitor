@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, #000000, #232323, #000000, #272626);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 5s infinite;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  color: rgb(32, 32, 32);
+  background-color: rgb(231, 250, 255);
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper,
+.lower {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-all {
+  width: 50%;
+  height: 280px;
+  border-radius: 25px;
+  margin: 5px;
+  border: 10px;
+  border-color: black;
+
+  background-color: #4caf50;
+  color: black;
+  font-size: 60px;
+}
+
+.btn-all.occupied {
+  background-color: #e74c3c;
+}
+
+.btn-all:hover {
+  cursor: pointer;
+  background-color: #45a049;
+}
+
+.btn-all.occupied:hover {
+  background-color: #c0392b;
+}
+
+.heading-h1 {
+  font-size: 60px;
+}
+
+.UCLogo {
+  width: 200px;
+  height: 100px;
+  display: block;
+}
+
+.title-heading {
+  display: block;
+  float: left;
+}
